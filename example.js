@@ -18,7 +18,18 @@ function rescale(bound,mapID, elementId, elementposition) {
 
     return bound
 }
-
+//not yet tested...should work... i hope
+function rescalebypercent(bound, ratio, elementposition) {
+    //Ratio - 1/2 - multiply by 2 
+    // 2- divide by 2;    
+        if(elementposition=="right"){
+            bound.b.f = bound.b.b + (Math.abs(Math.abs(bound.b.f) - bound.b.b) /ratio)
+        }
+        if(elementposition=="left"){
+            bound.b.b = bound.b.f - (Math.abs(Math.abs(bound.b.f) - bound.b.b) /ratio)
+        }
+    return bound
+}
 
 
 //Example use:
