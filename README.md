@@ -21,7 +21,7 @@ Your MAP.fitBounds(rescale(response.routes[0].bounds))
 
 ```
 
-##Arguments ##
+## Arguments ##
 bound-pass bound from response of direction service
 element- pass id of your control div hovering over map
 elementposition- pass left or right (or just add top/bottom option)
